@@ -1,4 +1,7 @@
 
+
+SyntaxHighlighter = SyntaxHighlighter || (typeof(require) != 'undefined' ? SyntaxHighlighter = require('shCore').SyntaxHighlighter : null);
+
 SyntaxHighlighter.brushes.Custom = function()
 {
     
