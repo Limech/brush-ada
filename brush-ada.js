@@ -1,8 +1,10 @@
 
-
+;(function()
+{
+    
 SyntaxHighlighter = SyntaxHighlighter || (typeof(require) != 'undefined' ? SyntaxHighlighter = require('shCore').SyntaxHighlighter : null);
 
-SyntaxHighlighter.brushes.Custom = function()
+function Brush()
 {
     
   var datatypes = 'Integer Float Duration Character String Boolean';
@@ -57,5 +59,8 @@ SyntaxHighlighter.brushes.Custom = function()
    ];
 };
 
-SyntaxHighlighter.brushes.Custom.prototype  = new SyntaxHighlighter.Highlighter();
-SyntaxHighlighter.brushes.Custom.aliases  = ['ada'];
+Brush.prototype = new SyntaxHighlighter.Highlighter();
+Brush.aliases = ['ada'];
+
+typeof(exports) != 'undefined' ? exports.Brush = Brush : null;
+})();
