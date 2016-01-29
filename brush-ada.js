@@ -62,5 +62,7 @@ function Brush()
 Brush.prototype = new SyntaxHighlighter.Highlighter();
 Brush.aliases = ['ada'];
 
+  SyntaxHighlighter.brushes.Ada = Brush;
+
 typeof(exports) != 'undefined' ? exports.Brush = Brush : null;
 })();
