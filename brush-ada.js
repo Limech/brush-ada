@@ -1,10 +1,5 @@
 
-;(function()
-{
-    
-SyntaxHighlighter = SyntaxHighlighter || (typeof(require) != 'undefined' ? SyntaxHighlighter = require('shCore').SyntaxHighlighter : null);
-
-function Brush()
+SyntaxHighlighter.brushes.Custom = function()
 {
     
   var datatypes = 'Integer Float Duration Character String Boolean';
@@ -57,12 +52,7 @@ function Brush()
       css: 'keyword bold'
     }
    ];
-};
+ };
 
-Brush.prototype = new SyntaxHighlighter.Highlighter();
-Brush.aliases = ['ada'];
-
-  SyntaxHighlighter.brushes.Ada = Brush;
-
-typeof(exports) != 'undefined' ? exports.Brush = Brush : null;
-})();
+SyntaxHighlighter.brushes.Custom.prototype = new SyntaxHighlighter.Highlighter();
+SyntaxHighlighter.brushes.Custom.aliases  = ['ada'];
