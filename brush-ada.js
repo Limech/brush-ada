@@ -1,5 +1,5 @@
 
-SyntaxHighlighter.brushes.Custom = function()
+SyntaxHighlighter.brushes.Ada = function()
 {
     
   var datatypes = 'Integer Float Duration Character String Boolean';
@@ -54,5 +54,5 @@ SyntaxHighlighter.brushes.Custom = function()
    ];
  };
 
-SyntaxHighlighter.brushes.Custom.prototype = new SyntaxHighlighter.Highlighter();
-SyntaxHighlighter.brushes.Custom.aliases  = ['ada'];
+SyntaxHighlighter.brushes.Ada.prototype = new SyntaxHighlighter.Highlighter();
+SyntaxHighlighter.brushes.Ada.aliases  = ['ada'];
